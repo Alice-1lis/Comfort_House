@@ -1,0 +1,167 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #242B33 11.98%,
+     rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%),
+url('/img/hero2house.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+   padding-bottom: 74px;
+ 
+    background-position: center;//бэграунд(img) (центрировала фото)
+    @include mediaTablet {
+      padding-bottom: 20px;
+    }
+  @include mediaMobile {
+    padding-bottom: 0;
+    }
+  .logo{
+    width: 144px;
+    height: 61px;
+    object-fit: cover;
+    padding-top: 15px;
+  }
+  .header__nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+@include mediaTablet{
+    flex-direction: column;
+  
+  }
+
+
+
+}
+  .header__footer.container{
+ margin: 0 auto;
+ justify-content: center;
+ padding-top: 40px;
+ font-size: 18px;
+ @include mediaTablet{
+ 
+  }
+  
+  }}
+.header__top--mobile{
+   
+ @include mediaTablet{
+position: fixed;
+  width: 60%;
+  height: 90%;
+  top: 0;
+  right: 0;
+  background-color: $dark;
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+  display: grid;
+  gap: 20px;
+
+
+  h1{
+  display: none;
+}
+.header__title{
+  display: none;
+}
+.header__title-icon{
+  display: none;
+}
+
+
+}
+.contacts_info{
+   @include mediaMobile{
+   font-size: 14px;
+   }
+}
+
+}
+ 
+
+
+.header__top--mobile .header__nav-btn{
+position: absolute;
+top: 5px;
+right: 5px;
+ 
+}
+
+ //mobile-menu-active-----------------------------------------------------------
+    .nav__items {
+      display: flex;
+     column-gap: 15px;
+      font-size: 16px;
+      padding-top: 17px;
+     
+      @include mediaTablet {
+     display: none;
+        
+      }
+    }
+    .header__top--mobile .nav__items {
+      @include mediaTablet {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 35px;
+        font-size: 16px;
+        margin-top: 20px;
+        color: $white;
+      }
+     
+    }
+    
+//-------------------------------------------------------------
+
+
+
+ 
+.header__title-icon{
+margin-top: 80px;
+transition: transform 0.8s ease-in-out;
+&:hover{
+  transform: rotate(180deg) scale(1.2);
+ 
+    }
+  }
+
+
+
+
+//mobile-----------------------------------------------------
+.header__nav-btn{
+  display: none;
+    @include mediaTablet {
+    display: block;
+    padding-top: 25px;
+   }
+
+
+ }
+  
+  
+  
+   .header__title{
+    padding-top: 160px;
+  text-align: center;
+ color: $accent;
+ font-weight: 700;
+  font-size: 48px;
+  font-family: $font-accent;
+  display: block;
+   @include mediaTablet {
+    font-size: 32px;
+    padding-inline: 15px;
+
+   }
+ 
+  }
+
+//--------------------------------------?
+

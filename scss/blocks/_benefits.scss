@@ -1,0 +1,67 @@
+.benefits {
+  position: relative;
+  padding-top: 180px 0;
+  padding-bottom: 160px;
+   overflow: hidden;
+   &::after{  //decor
+    content: 'II';
+      position: absolute;
+      top: -30px;
+        left: calc(56% + 555px);
+        transform: translate(-50%, -8%); 
+        line-height: 1.15;
+        opacity: 0.02;
+        font-size: 400px;
+        font-weight: 700;
+        font-family: $font-accent;
+         // @include decorNumber;
+    }
+    @include mediaTablet {
+      padding-top: 100px;
+      padding-bottom: 80px;
+    }
+}
+
+
+
+
+
+//Ниже стили для заголовка h2(Переваги нашого ЖК) которого не видно на сайте, для поисковиков! секция - benefits
+.visually-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+   clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.benefits__row {
+ 
+  padding-top: 70px;
+  display: flex;
+  text-align: center;
+  gap: 70px;
+  @include mediaTablet{
+flex-wrap: wrap;
+ justify-content: center;
+}
+  
+}
+.benefits__item {
+max-width: 170px;
+width: 100%;
+@include mediaTablet{
+
+ 
+}
+}
+.benefits__item-img {
+  margin-bottom: 53px;
+}
+.benefits__item-text {
+  font-size: 18px;
+  font-family: $font-secondary;
+  font-weight: 300;
+}

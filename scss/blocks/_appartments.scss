@@ -1,0 +1,45 @@
+.apartments {
+    position: relative;
+    object-fit: cover;
+     &::before{  //decor
+    content: 'III';
+      position: absolute;
+        top: -46px;
+        right: calc(50% + 555px);
+        transform: translate(50%, 0%); 
+        line-height: 1;
+        opacity: 0.02;
+        font-size: 400px;
+        font-weight: 700;
+        font-family: $font-accent;
+          // @include decorNumber;
+  }
+}
+
+.apartments__title {
+    padding-top: 60px;
+    margin-bottom: 42px;
+    @include mediaTablet{
+      text-align: center;
+      padding-top: 20px;
+      .title-2{
+  font-size: 32px;
+      }
+    }
+}
+
+.apartments__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    @include mediaTablet{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        gap: 30px; 
+        justify-items: center;
+         //grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));                            ----- mobile
+      }
+
+}
+
+

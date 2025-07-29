@@ -1,0 +1,32 @@
+
+//Base style
+@import'./base/reset';
+@import'./base/vars';
+@import'./base/base2';
+
+
+//mixins
+@import'./blocks/mixins';
+
+
+//Blocks
+@import'./blocks/header';
+@import'./blocks/nav-icon';
+@import'./blocks/_contacts.info';
+
+@import'./blocks/benefits';
+@import'./blocks/appartments';
+@import'./blocks/_cards';
+@import'./blocks/cta';
+@import'./blocks/form'; 
+@import'./blocks/video';
+@import'./blocks/section-map';
+@import'./blocks/feedback';
+@import'./blocks/footer';
+
+
+
+/*ВАЖНО!-- не забывать подключать файлы!*/
+/*дополняя к названию файла, нижнее подчеркивание - в начале названия, например:
+ _style.scss,  мы сообщаем что не нужно создавать отдельный файл css и map.css*/
+ 

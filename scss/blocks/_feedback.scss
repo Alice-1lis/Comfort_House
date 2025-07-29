@@ -1,0 +1,49 @@
+.feedback {
+padding-bottom: 80px;
+padding-top: 180px;
+ overflow: hidden;
+ height: 100vh;
+  @include mediaTablet {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    height: auto;
+    }
+}
+
+.feedback__title {
+margin-bottom: 42px;
+ 
+}
+.title-2 {
+  @include mediaTablet{
+  font-size: 32px;
+     text-align: center;
+    }
+}
+.feedback__form {
+display: grid;
+   grid-template-columns: repeat(4, 1fr);
+    gap: 30px; 
+    align-items: center;
+    @include mediaTablet {
+        grid-template-columns: 1fr; //на планшете одна колонка
+        gap: 20px;
+        width: 100%;
+        padding-inline: 20px;
+        margin: auto;
+    }
+}
+.form {
+     overflow: hidden;
+}
+
+.form__input {
+@include mediaTablet{
+    height: 70px;
+}
+}
+.form__btn {
+@include mediaTablet{
+    height: 70px;
+}
+}

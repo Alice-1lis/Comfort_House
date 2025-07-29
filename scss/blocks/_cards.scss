@@ -1,0 +1,62 @@
+
+.cards {
+    position: relative;
+    display: inline-block;
+    max-width: 560px;
+    max-height: 100%;
+    color: $white;
+    overflow: hidden;
+    &::before{//градиент, сверху на фото
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 6;
+        background: linear-gradient(180deg, rgba(36, 43, 51, 0)0%, $dark 100%
+        );
+    }
+
+      &::after{//рамка,на новый фото
+        opacity: 0;
+        content: "";
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        right: 15px;
+        bottom: 15px;
+        border: 3px double rgba(255, 255, 255, 0.4);
+        transition: opacity 0.3s ease-in;
+        z-index: 7;
+    }
+&:hover{
+    color: $white;
+}
+
+    &:hover::after{
+        opacity: 1;
+      
+    }
+}
+
+
+.cards__img {
+    position: relative;
+transition: transform 0.4s ease-in;
+z-index: 5;
+}
+
+.cards:hover .cards__img{//при наведении на cards cadds__img увеличивается
+    transform: scale(1.1);
+}
+
+
+.cards__title {
+    position: absolute;
+    left: 50px;
+    right: 20px;
+    bottom: 44px;
+    font-size: 24px;
+   z-index: 9;
+}
