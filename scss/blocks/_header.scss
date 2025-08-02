@@ -49,19 +49,18 @@ align-items: center;
 .header__top--mobile{
    
  @include mediaTablet{
-position: fixed;
-  width: 60%;
-  height: 90%;
-  top: 0;
-  right: 0;
-  background-color: $dark;
-  display: flex;
- flex-direction: column;
- align-items: center;
-  display: grid;
-  gap: 20px;
-
-
+    position: fixed;
+    width: 60%;
+    height: 90%;
+    top: 0;
+    right: 0;
+    background-color: $dark;
+    display: flex;
+     flex-direction: column;
+    align-items: center;
+    display: grid;
+    gap: 20px;
+    z-index: 9;
   h1{
   display: none;
 }
