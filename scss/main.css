@@ -146,7 +146,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../img/hero2house.jpg");
+  background-image: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../img/hero_house.jpg");
   background-size: cover;
   min-height: 100vh;
   width: 100%;
@@ -189,7 +189,7 @@ a:hover {
   .header__top--mobile {
     position: fixed;
     width: 60%;
-    height: 75%;
+    height: 90%;
     top: 0;
     right: 0;
     background-color: #242b33;
@@ -197,7 +197,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     display: grid;
-    z-index: 9;
+    gap: 20px;
   }
   .header__top--mobile h1 {
     display: none;
@@ -407,12 +407,6 @@ a:hover {
   .benefits {
     padding-top: 70px;
     padding-bottom: 80px;
-  }
-}
-@media screen and (max-width: 428px) {
-  .benefits {
-    padding-top: 50px;
-    padding-bottom: 60px;
   }
 }
 
