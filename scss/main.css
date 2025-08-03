@@ -146,7 +146,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../img/hero_house.jpg");
+  background-image: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../img/hero2house.jpg");
   background-size: cover;
   min-height: 100vh;
   width: 100%;
@@ -189,7 +189,7 @@ a:hover {
   .header__top--mobile {
     position: fixed;
     width: 60%;
-    height: 90%;
+    height: 75%;
     top: 0;
     right: 0;
     background-color: #242b33;
@@ -197,7 +197,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     display: grid;
-    gap: 20px;
+    z-index: 9;
   }
   .header__top--mobile h1 {
     display: none;
@@ -210,6 +210,9 @@ a:hover {
   }
 }
 @media screen and (max-width: 428px) {
+  .header__top--mobile {
+    height: 100%;
+  }
   .header__top--mobile .contacts_info {
     font-size: 14px;
   }
@@ -402,8 +405,14 @@ a:hover {
 }
 @media screen and (max-width: 959px) {
   .benefits {
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .benefits {
+    padding-top: 50px;
+    padding-bottom: 60px;
   }
 }
 
@@ -761,7 +770,7 @@ span {
   padding-top: 180px;
   overflow: hidden;
   height: 100vh;
-  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.7)), url("../blocks/../img/lamp-4720975_640.jpg");
+  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.7)), url("/css/../img/lamp-4720975_640.jpg");
   background-size: cover;
 }
 @media screen and (max-width: 959px) {
